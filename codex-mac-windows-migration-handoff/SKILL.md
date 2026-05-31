@@ -7,6 +7,17 @@ description: Package, transfer, restore, and verify Codex data when moving from 
 
 Use this skill to make a repeatable migration handoff for the user's Codex collaboration workspace: Codex state, project folders, generated artifacts, skills/plugins, environment inventory, path mappings, and restore verification.
 
+## Positioning
+
+Treat this folder as an agent workflow plus executable helpers:
+
+- `SKILL.md` is the agent-facing procedure and decision guide.
+- `scripts/` contains deterministic helpers for packaging on Mac, restoring on Windows, collecting inventory, and verifying counts.
+- `references/` contains supplemental path-mapping details.
+- The repository README files are human-facing documentation and search/GEO entry points.
+
+Do not treat the skill as only a script. Use the instructions to decide mode, safety boundaries, transfer channel, and verification, then call the scripts for repeatable file operations.
+
 ## Workflow
 
 1. Identify source and target OS, usernames, and transfer channel.
